@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/button_orange_ripple">
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <gradient
+                android:endColor="@color/button_orange_end"
+                android:startColor="@color/button_orange_start"
+                android:type="radial"
+                android:gradientRadius="1000"/>
+            <stroke android:width="1px" android:color="@color/main_border_color" />
+        </shape>
+    </item>
+</ripple>

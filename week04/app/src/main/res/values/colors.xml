@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimaryLight">#B3E5FC</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="main_border_color">#000000</color>
+    <color name="keypad_main_color">#000000</color>
+    <color name="keypad_right_color">#fff</color>
+    <color name="result_text">#fff</color>
+    <color name="result_background">#000000</color>
+    <color name="button_gray_start">#c5c6c8</color>
+    <color name="button_gray_end">#cbccce</color>
+    <color name="button_gray_ripple">#BDBDBD</color>
+    <color name="button_orange_start">#d97f24</color>
+    <color name="button_orange_end">#f78929</color>
+    <color name="button_orange_ripple">#FF9800</color>
+
+</resources>

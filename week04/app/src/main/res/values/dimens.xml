@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_text_size">45dp</dimen>
+    <dimen name="calculator_line_text_size">90dp</dimen>
+    <dimen name="calculator_accumulate_line_text_size">20dp</dimen>
+</resources>
