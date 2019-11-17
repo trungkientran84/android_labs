@@ -34,11 +34,11 @@ public class DummyContent {
 
     private static void addItem(DummyItem item) {
         ITEMS.add(item);
-        ITEM_MAP.put(item.id, item);
+        ITEM_MAP.put(item.title, item);
     }
 
     private static DummyItem createDummyItem(int position) {
-        return new DummyItem(String.valueOf(position), "Item " + position, makeDetails(position));
+        return new DummyItem(position%2==0, "Note: " + position, "2019-10-25",  makeDetails(position), position%2!=0);
     }
 
     private static String makeDetails(int position) {
@@ -54,19 +54,29 @@ public class DummyContent {
      * A dummy item representing a piece of content.
      */
     public static class DummyItem {
-        public final String id;
-        public final String content;
+        public final Boolean isPriority;
+        public final String title;
+        public final String createdDate;
         public final String details;
+        public  Boolean isFavourite;
 
-        public DummyItem(String id, String content, String details) {
-            this.id = id;
-            this.content = content;
+        public DummyItem(Boolean isPriority, String title, String createdDate, String details, Boolean isFavourite) {
+            this.isPriority = isPriority;
+            this.title = title;
+            this.createdDate = createdDate;
             this.details = details;
+            this.isFavourite = isFavourite;
         }
 
         @Override
         public String toString() {
-            return content;
+            return "DummyItem{" +
+                    "isPriority=" + isPriority +
+                    ", title='" + title + '\'' +
+                    ", createdDate='" + createdDate + '\'' +
+                    ", details='" + details + '\'' +
+                    ", isFavourite=" + isFavourite +
+                    '}';
         }
     }
 }
